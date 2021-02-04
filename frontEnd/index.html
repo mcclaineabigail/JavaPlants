@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header><h1>House Plant Catalog</h1></header>
+    <div class="container">
+        <section id="owned">
+            <div class="plant">
+                <aside class="plant-header">
+                    <h2 class="plant-name">Pothos</h2>
+                    <img class="sun" src="/light/any.png" alt="sun need" />
+                </aside>
+                <aside class="plant-info">
+                    <img src="/plant-images/pothos.PNG" alt="plant photo" class="image">
+                    <p class="water-frequency">💧 2 times per week</p>
+                    <p class="fertilize">∴ monthy during growing season</p>
+                </aside>
+            </div>
+            <div class="plant">
+                <aside class="plant-header">
+                    <h2 class="plant-name">Spider Plant</h2>
+                    <img class="sun" src="/light/any.png" alt="sun need" />
+                </aside>
+                <aside class="plant-info">
+                    <img src="/plant-images/spider-plant.PNG" alt="plant photo" class="image">
+                    <p class="water-frequency">💧 1 time per week</p>
+                    <p class="fertilize">∴ monthy during growing season</p>
+                </aside>
+            </div>
+            <div class="plant">
+                <aside class="plant-header">
+                    <h2 class="plant-name">Aloe Vera</h2>
+                    <img class="sun" src="/light/bright.png" alt="sun need" />
+                </aside>
+                <aside class="plant-info">
+                    <img src="/plant-images/aloe-vera.jpg" alt="plant photo" class="image">
+                    <p class="water-frequency">💧 1 time per 3 weeks</p>
+                    <p class="fertilize">∴ monthy during growing season</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="wanted">
+            <select id="dropdown" size="1" placeholder="Select New Plant">
+                <option class="choose-plant" value="" disabled selected>Select New Plant</option>
+                <option class="choose-plant">@Data.Name</option>
+             </select>
+        
+
+             <div>
+                <label class="new" for="plant-name"></label>
+                <label class="new" for="plant-sun"></label>
+                <label class="new" for="plant-image"></label>
+                <label class="new" for="plant-water"></label>
+                <label class="new" for="plant-notes"></label>
+
+                <input placeholder="Plant Name" type="text" id="plant-name" />
+                <input placeholder="Plant Light Needs" type="text" id="plant-sun" />
+                <input placeholder="Plant File Path" type="text" id="plant-image" />
+                <input placeholder="Plant Water Needs" type="text" id="plant-water" />
+                <input placeholder="Plant Notes" type="text" id="plant-notes" />
+             </div>
+
+            <button id="submit"><img src="./plant-images/add.png" id="add" alt="Add Plant"></button>
+        </section>
+
+        <div class="border" id="left"></div>
+        <div class="border" id="right"></div>
+        <div class="border" id="top"></div>
+        <div class="border" id="bottom"></div>
+    </div>
+</body>
+</html>

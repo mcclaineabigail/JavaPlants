@@ -1,0 +1,11 @@
+### Get all plants
+GET http://localhost:8080/api/plants
+
+### Get plant by Id
+GET  http://localhost:8080/api/plant/3
+
+### Get all catalogs
+GET  http://localhost:8080/api/catalogs
+
+### Get Catalog by Id
+GET http://localhost:8080/api/catalog/5
