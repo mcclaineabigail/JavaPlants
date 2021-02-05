@@ -12,6 +12,8 @@
     <header><h1>House Plant Catalog</h1></header>
     <div class="container">
         <section id="owned">
+
+
             <div class="plant">
                 <aside class="plant-header">
                     <h2 class="plant-name">Pothos</h2>
@@ -22,8 +24,8 @@
                     <p class="water-frequency">💧 2 times per week</p>
                     <p class="fertilize">∴ monthy during growing season</p>
                 </aside>
-            </div>
-            <div class="plant">
+            </div> 
+             <div class="plant">
                 <aside class="plant-header">
                     <h2 class="plant-name">Spider Plant</h2>
                     <img class="sun" src="/light/any.png" alt="sun need" />
@@ -50,7 +52,6 @@
         <section class="wanted">
             <select id="dropdown" size="1" placeholder="Select New Plant">
                 <option class="choose-plant" value="" disabled selected>Select New Plant</option>
-                <option class="choose-plant">@Data.Name</option>
              </select>
         
 
@@ -61,15 +62,17 @@
                 <label class="new" for="plant-water"></label>
                 <label class="new" for="plant-notes"></label>
 
-                <input placeholder="Plant Name" type="text" id="plant-name" />
+                <!-- <input placeholder="Plant Name" type="text" id="plant-name" />
                 <input placeholder="Plant Light Needs" type="text" id="plant-sun" />
                 <input placeholder="Plant File Path" type="text" id="plant-image" />
                 <input placeholder="Plant Water Needs" type="text" id="plant-water" />
-                <input placeholder="Plant Notes" type="text" id="plant-notes" />
+                <input placeholder="Plant Notes" type="text" id="plant-notes" /> -->
              </div>
 
             <button id="submit"><img src="./plant-images/add.png" id="add" alt="Add Plant"></button>
         </section>
+
+        <div id="search"></div>
 
         <div class="border" id="left"></div>
         <div class="border" id="right"></div>
@@ -77,4 +80,5 @@
         <div class="border" id="bottom"></div>
     </div>
 </body>
+<script src="js/app.js" type="module"></script>
 </html>
